@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="UVS 2 ECO CLUB — Байгалиа хайрлая, ирээдүйгээ хамгаалъя.">
+  <meta name="theme-color" content="#174b35">
+  <title>UVS 2 ECO CLUB | Нүүр</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <script src="js/menu.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>🌿 Байгалиа хайрлая · Ирээдүйгээ хамгаалъя</span>
+      <span>UVS 2 ECO CLUB</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="brand-icon">🌿</span>
+        <span><strong>UVS 2 ECO CLUB</strong><small>GREEN FUTURE</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Цэс нээх" aria-expanded="false">☰</button>
+      <nav id="mainMenu" class="main-menu" aria-label="Үндсэн цэс">
+        <a class="active" href="index.html">Нүүр</a>
+        <div class="nav-dropdown">
+          <button class="dropdown-toggle" aria-expanded="false">Бидний тухай <span>⌄</span></button>
+          <div class="dropdown-menu">
+            <a href="pages/about.html">Клубын танилцуулга</a>
+            <a href="pages/about.html#goals">Зорилго, чиглэл</a>
+            <a href="pages/about.html#members">Гишүүд</a>
+          </div>
+        </div>
+        <a href="pages/news.html">Мэдээ</a>
+        <a href="pages/projects.html">Төслүүд</a>
+        <a href="pages/gallery.html">Галерей</a>
+        <a href="pages/contact.html">Холбоо барих</a>
+      </nav>
+      <a class="header-cta" href="pages/contact.html">Бидэнтэй нэгдэх ↗</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">ECOLOGY · COMMUNITY · FUTURE</span>
+          <h1>Өнөөдрийн үйлсээр <span>ногоон ирээдүйг</span> бүтээе.</h1>
+          <p>Бид байгалиа хамгаалж, зөв дадлыг түгээж, эх дэлхийнхээ төлөө бодит өөрчлөлт бүтээхээр нэгдсэн экологийн клуб.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="pages/about.html">Бидний тухай →</a>
+            <a class="button button-outline" href="pages/news.html">Мэдээ үзэх ↗</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1200&q=85" alt="Байгалийн үзэсгэлэнт орчин">
+          <div class="floating-note"><strong>🌱 Ногоон ирээдүйн төлөө</strong><span>Багахан үйлдэл бүр том өөрчлөлтийн эхлэл.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-strip">
+      <div class="container feature-grid">
+        <article class="feature"><span>🌳</span><div><h3>Байгаль хамгаалал</h3><p>Эх дэлхийгээ хайрлаж, байгалийн баялгаа хамгаална.</p></div></article>
+        <article class="feature"><span>♻️</span><div><h3>Зөв дадал</h3><p>Хог хаягдлаа ангилж, дахин ашиглалтыг дэмжинэ.</p></div></article>
+        <article class="feature"><span>🤝</span><div><h3>Хамтын оролцоо</h3><p>Сурагч бүрийн оролцоогоор эерэг өөрчлөлт бүтээнэ.</p></div></article>
+      </div>
+    </section>
+
+    <section class="section section-white">
+      <div class="container section-heading">
+        <div><span class="section-label">LATEST UPDATES</span><h2>Сүүлийн үеийн мэдээ</h2><p>Клубын үйл ажиллагаа, байгаль хамгааллын санаачилгууд.</p></div>
+        <a class="text-link" href="pages/news.html">Бүх мэдээ →</a>
+      </div>
+      <div class="container card-grid" id="homeNews">
+        <article class="content-card"><img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=800&q=80" alt="Ургамал арчлах"><div class="card-body"><span class="tag">БАЙГАЛЬ</span><h3>Ногоон орчныг хамтдаа бүтээе</h3><p>Байгалиа хайрлах нь биднээс эхэлнэ.</p><a class="text-link" href="pages/news.html">Дэлгэрэнгүй →</a></div></article>
+        <article class="content-card"><img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80" alt="Байгаль хамгаалал"><div class="card-body"><span class="tag">ЭКО ДАДАЛ</span><h3>Хог хаягдлаа зөв ангилцгаая</h3><p>Өдөр тутмын жижиг дадлаар өөрчлөлт хийцгээе.</p><a class="text-link" href="pages/news.html">Дэлгэрэнгүй →</a></div></article>
+        <article class="content-card"><img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=800&q=80" alt="Байгаль"><div class="card-body"><span class="tag">БИДНИЙ ҮНЭТ ЗҮЙЛ</span><h3>Байгаль бол бидний гэр</h3><p>Ирээдүйгээ хамгаалах хамтын зорилго.</p><a class="text-link" href="pages/news.html">Дэлгэрэнгүй →</a></div></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container section-heading"><div><span class="section-label">OUR INITIATIVES</span><h2>Бидний төслүүд</h2><p>Санаанаас бодит үйлдэл рүү.</p></div><a class="text-link" href="pages/projects.html">Бүх төсөл →</a></div>
+      <div class="container project-grid">
+        <article class="project-card"><span>🌲</span><h3>Ногоон орчин</h3><p>Мод, ургамал хамгаалах болон ногоон орчныг нэмэгдүүлэх санаачилга.</p><a href="pages/projects.html">Дэлгэрэнгүй →</a></article>
+        <article class="project-card"><span>♻️</span><h3>Хог хаягдлын менежмент</h3><p>Хог хаягдлыг ангилах, дахин ашиглах дадлыг түгээх.</p><a href="pages/projects.html">Дэлгэрэнгүй →</a></article>
+        <article class="project-card"><span>🌍</span><h3>Эко боловсрол</h3><p>Байгаль орчны мэдлэг, зөв дадлыг хуваалцах.</p><a href="pages/projects.html">Дэлгэрэнгүй →</a></article>
+      </div>
+    </section>
+
+    <section class="cta-section"><div class="container cta-box"><div><span class="section-label">JOIN OUR MOVEMENT</span><h2>Өөрчлөлт биднээс эхэлнэ.</h2><p>Илүү цэвэр, ногоон ирээдүйг хамтдаа бүтээцгээе.</p></div><a class="button button-light" href="pages/contact.html">Бидэнтэй холбогдох ↗</a></div></section>
+  </main>
+
+  <div id="site-footer"></div>
+</body>
+</html>
