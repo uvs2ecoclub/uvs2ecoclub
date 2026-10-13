@@ -47,7 +47,7 @@ img { display: block; width: 100%; object-fit: cover; }
   box-shadow: var(--shadow);
   transform: translate(0px, 0px);
 }
-.floating-note { position: absolute; bottom: 0; left: -100px; max-width: 260px; background: yellow; padding: 16px; border: 1px solid var(--border); border-radius: 16px; box-shadow: var(--shadow); }
+.floating-note { position: absolute; bottom: 0; left: -200px; max-width: 260px; background: yellow; padding: 16px; border: 1px solid var(--border); border-radius: 16px; box-shadow: var(--shadow); }
 .floating-note strong, .floating-note span { display: block; }
 .floating-note strong { font-size: 13px; color: var(--green); }
 .floating-note span { font-size: 11px; color: var(--muted); }
