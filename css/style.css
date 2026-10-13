@@ -32,8 +32,20 @@ img { display: block; width: 100%; object-fit: cover; }
 .button-primary { background: var(--green); color: white; }
 .button-outline { border: 1px solid #d8e4d9; background: white; color: var(--green); }
 .button-light { background: var(--lime); color: var(--green-dark); }
-.hero-visual { min-height: 410px; position: relative; }
-.hero-visual > img { position: absolute; inset: 0 0 18px 28px; width: calc(100% - 28px); height: calc(100% - 18px); border-radius: 28px 90px 28px 28px; box-shadow: var(--shadow); }
+
+.hero-visual {
+  height: 500px;
+  position: relative;
+}
+
+.hero-visual > img {
+  position: absolute;
+  inset: 0 0 18px 28px;
+  width: calc(100% - 28px);
+  height: calc(100% - 18px);
+  border-radius: 28px 90px 28px 28px;
+  box-shadow: var(--shadow);
+}
 .floating-note { position: absolute; bottom: 0; left: 0; max-width: 260px; background: white; padding: 16px; border: 1px solid var(--border); border-radius: 16px; box-shadow: var(--shadow); }
 .floating-note strong, .floating-note span { display: block; }
 .floating-note strong { font-size: 13px; color: var(--green); }
