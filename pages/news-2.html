@@ -2,14 +2,18 @@
 <!DOCTYPE html>
 <html lang="mn">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Архив мэдээ | UVS 2 ECO CLUB</title>
-<link rel="stylesheet" href="../css/style.css">
-<link rel="stylesheet" href="../css/header.css">
-<link rel="stylesheet" href="../css/footer.css">
-<script src="../js/menu.js" defer></script>
-<script src="../js/main.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Мэдээний архив | UVS 2 ECO CLUB</title>
+  <meta name="description" content="UVS 2 ECO CLUB-ийн өмнөх мэдээ, байгаль хамгаалал болон эко дадлын мэдээлэл.">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/news.css">
+
+  <script src="../js/menu.js" defer></script>
 </head>
 <body>
 
@@ -22,8 +26,10 @@
         <small>GREEN FUTURE</small>
       </span>
     </a>
+
     <button class="menu-toggle" id="menuToggle"
       aria-label="Цэс нээх" aria-expanded="false">☰</button>
+
     <nav id="mainMenu" class="main-menu">
       <a href="../index.html">Нүүр</a>
       <a href="about.html">Бидний тухай</a>
@@ -35,73 +41,127 @@
   </div>
 </header>
 
-<main class="section">
-  <div class="container">
-    <span class="section-label">NEWS ARCHIVE</span>
-    <h1 class="section-title">Мэдээний архив</h1>
-    <p class="section-desc">
-      Өмнө нийтлэгдсэн мэдээ, мэдээллүүд.
-    </p>
+<main class="news-page">
 
-    <div class="card-grid" style="margin-top:30px">
+  <section class="news-hero">
+    <div class="news-hero-inner">
+      <span class="news-eyebrow">🌿 OUR GREEN JOURNAL</span>
+      <h1>Мэдээний <span>архив.</span></h1>
+      <p>
+        Өмнө нийтлэгдсэн мэдээ, мэдээллээ эргэн үзэж,
+        байгаль хамгаалах мэдлэгээ нэмэгдүүлээрэй.
+      </p>
+      <a href="#archive-news" class="news-hero-button">
+        Архив үзэх <span>↓</span>
+      </a>
+    </div>
+    <div class="hero-decoration" aria-hidden="true">🍃</div>
+  </section>
 
-      <article class="content-card">
-        <img
-          src="https://cdn.yld.mn/553c9866-92a8-446a-b029-31623f3b4793-1200x0-54233e8d-6e17-40cb-a736-e79431a28671-008.png"
-          alt="Цоохор ирвэс болон зэрлэг амьтад">
-        <div class="card-body">
-          <span class="tag">БАЙГАЛЬ</span>
+  <section class="news-section" id="archive-news">
+
+    <div class="news-section-heading">
+      <div>
+        <span class="news-label">FROM OUR ARCHIVE</span>
+        <h2>Өмнөх мэдээнүүд</h2>
+        <p>Бидний хуваалцсан эко санаа, зөв дадлууд.</p>
+      </div>
+      <span class="news-count">АРХИВ</span>
+    </div>
+
+    <div class="news-grid">
+
+      <a class="news-card"
+         href="news-detail.html?id=irves">
+        <div class="news-image-wrap">
+          <img
+            src="https://cdn.yld.mn/553c9866-92a8-446a-b029-31623f3b4793-1200x0-54233e8d-6e17-40cb-a736-e79431a28671-008.png"
+            alt="Цоохор ирвэс болон зэрлэг амьтад"
+            loading="lazy">
+          <span class="news-image-tag">БАЙГАЛЬ</span>
+        </div>
+        <div class="news-card-content">
+          <div class="news-meta">
+            <span>🐾 БАЙГАЛЬ ХАМГААЛАЛ</span>
+            <time datetime="2026-10-13">2026.10.13</time>
+          </div>
           <h3>Ховордсон ан амьтдыг хамгаалъя</h3>
           <p>
-            Цоохор ирвэс болон ховордсон ан амьтдыг хамгаалах нь
-            байгаль орчны тэнцвэрийг хадгалахад чухал ач холбогдолтой.
-            Зэрлэг амьтдын амьдрах орчныг хамгаалж, байгалиа хайрлая.
+            Цоохор ирвэс болон ховордсон амьтдын амьдрах
+            орчныг хамгаалахын ач холбогдлыг мэдэж авъя.
           </p>
-          <span class="news-date">Огноо: 2026-10-13</span>
+          <span class="news-read">
+            Дэлгэрэнгүй унших <span>↗</span>
+          </span>
         </div>
-      </article>
+      </a>
 
-      <article class="content-card">
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSSLmAP2B3yUyjkAxF0WnSpqIz7_M_RCHwV3M5_dkveA&s=10"
-          alt="Хог хаягдлыг ангилан ялгах">
-        <div class="card-body">
-          <span class="tag">ЭКО ДАДАЛ</span>
+      <a class="news-card"
+         href="news-detail.html?id=recycle">
+        <div class="news-image-wrap">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSSLmAP2B3yUyjkAxF0WnSpqIz7_M_RCHwV3M5_dkveA&s=10"
+            alt="Хог хаягдлыг ангилан ялгах"
+            loading="lazy">
+          <span class="news-image-tag">ЭКО ДАДАЛ</span>
+        </div>
+        <div class="news-card-content">
+          <div class="news-meta">
+            <span>♻️ ДАХИН БОЛОВСРУУЛАЛТ</span>
+            <time datetime="2026-10-13">2026.10.13</time>
+          </div>
           <h3>Хог хаягдлаа ангилцгаая</h3>
           <p>
-            Шил, лааз, хуванцар болон цаасан хог хаягдлыг
-            ангилан ялгаж, дахин боловсруулах боломжийг нэмэгдүүлье.
-            Цэвэр орчин жижиг дадлаас эхэлнэ.
+            Хог хаягдлаа зөв ангилан ялгаж, дахин
+            боловсруулах боломжийг нэмэгдүүлье.
           </p>
-          <span class="news-date">Огноо: 2026-10-13</span>
+          <span class="news-read">
+            Дэлгэрэнгүй унших <span>↗</span>
+          </span>
         </div>
-      </article>
+      </a>
 
-      <article class="content-card">
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKOOv-lumndaX4ZN5Ar7gvOqzrK54aVexicj4-6kCrlQ&s=10"
-          alt="Ногоон байгаль">
-        <div class="card-body">
-          <span class="tag">БАЙГАЛЬ</span>
+      <a class="news-card"
+         href="news-detail.html?id=nature">
+        <div class="news-image-wrap">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKOOv-lumndaX4ZN5Ar7gvOqzrK54aVexicj4-6kCrlQ&s=10"
+            alt="Ногоон байгаль"
+            loading="lazy">
+          <span class="news-image-tag">НОГООН ИРЭЭДҮЙ</span>
+        </div>
+        <div class="news-card-content">
+          <div class="news-meta">
+            <span>🌱 БАЙГАЛЬ</span>
+            <time datetime="2026-10-13">2026.10.13</time>
+          </div>
           <h3>Байгаль бол бидний гэр</h3>
           <p>
-            Байгаль дэлхийгээ хайрлан хамгаалж, мод ургамлаа
-            арчилж, орчноо цэвэр байлгах замаар ногоон ирээдүйг
-            хамтдаа бүтээцгээе.
+            Өдөр тутмын энгийн үйлдлээрээ байгаль
+            дэлхийгээ хамгаалах боломжтой.
           </p>
-          <span class="news-date">Огноо: 2026-10-13</span>
+          <span class="news-read">
+            Дэлгэрэнгүй унших <span>↗</span>
+          </span>
         </div>
-      </article>
+      </a>
 
     </div>
 
-    <!-- Хуудас хооронд шилжих -->
+    <div class="news-bottom">
+      <div>
+        <strong>Шинэ мэдээ бүр шинэ боломж.</strong>
+        <p>Ногоон ирээдүйн төлөө үргэлжлүүлэн суралцацгаая.</p>
+      </div>
+      <a href="projects.html">Төслүүд үзэх ↗</a>
+    </div>
+
     <nav class="news-pagination" aria-label="Мэдээний хуудсууд">
       <a href="news.html">← Шинэ мэдээнүүд</a>
-      <span class="current-page">2</span>
+      <span class="current-page" aria-current="page">2</span>
     </nav>
 
-  </div>
+  </section>
 </main>
 
 <footer class="site-footer">
