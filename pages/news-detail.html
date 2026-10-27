@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Мэдээ | UVS 2 ECO CLUB</title>
+  <meta name="description" content="UVS 2 ECO CLUB-ийн байгаль хамгааллын мэдээ, мэдээлэл.">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/news.css">
+  <script src="../js/menu.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../index.html">
+      <span class="brand-icon">🌿</span>
+      <span>
+        <strong>UVS 2 ECO CLUB</strong>
+        <small>GREEN FUTURE</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Цэс нээх" aria-expanded="false">☰</button>
+
+    <nav id="mainMenu" class="main-menu">
+      <a href="../index.html">Нүүр</a>
+      <a href="about.html">Бидний тухай</a>
+      <a class="active" href="news.html">Мэдээ</a>
+      <a href="projects.html">Төслүүд</a>
+      <a href="gallery.html">Галерей</a>
+      <a href="contact.html">Холбоо барих</a>
+    </nav>
+  </div>
+</header>
+
+<main class="news-page">
+  <article class="article-page">
+    <a class="article-back" href="news.html">← Бүх мэдээ рүү буцах</a>
+
+    <div id="articleContent" aria-live="polite">
+      <p>Мэдээ ачаалж байна...</p>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-brand">🌿 UVS 2 ECO CLUB</div>
+    <div class="footer-bottom">
+      <span>© 2026 UVS 2 ECO CLUB</span>
+      <a href="../index.html">Нүүр хуудас руу буцах ↑</a>
+    </div>
+  </div>
+</footer>
+
+<style>
+.article-page {
+  width: min(850px, 90%);
+  margin: 0 auto;
+  padding: 38px 0 80px;
+}
+
+.article-back {
+  display: inline-block;
+  margin-bottom: 28px;
+  color: #286443;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.article-back:hover {
+  text-decoration: underline;
+}
+
+.article-cover {
+  width: 100%;
+  max-height: 490px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 17px;
+  background: #e6f3e9;
+}
+
+.article-category {
+  display: inline-block;
+  margin-top: 28px;
+  color: #39774c;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.article-title {
+  margin: 12px 0;
+  color: #174b35;
+  font-size: clamp(30px, 5vw, 46px);
+  line-height: 1.25;
+}
+
+.article-date {
+  margin-bottom: 26px;
+  color: #7b897e;
+  font-size: 13px;
+}
+
+.article-body {
+  color: #435b49;
+  font-size: 16px;
+  line-height: 2;
+}
+
+.article-body p {
+  margin: 0 0 20px;
+}
+
+.article-bottom {
+  margin-top: 40px;
+  padding: 25px;
+  border-radius: 13px;
+  background: #e6f3e9;
+  color: #174b35;
+  line-height: 1.8;
+}
+
+.article-bottom a {
+  color: #174b35;
+  font-weight: 800;
+}
+
+.article-error {
+  padding: 35px 0;
+  color: #174b35;
+  line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+  .article-page {
+    padding-top: 26px;
+  }
+
+  .article-cover {
+    border-radius: 12px;
+  }
+
+  .article-body {
+    font-size: 15px;
+  }
+}
+</style>
+
+<script>
+const articles = {
+  irves: {
+    title: "Ховордсон ан амьтдыг хамгаалъя",
+    category: "БАЙГАЛЬ ХАМГААЛАЛ",
+    date: "2026-10-13",
+    image: "https://cdn.yld.mn/553c9866-92a8-446a-b029-31623f3b4793-1200x0-54233e8d-6e17-40cb-a736-e79431a28671-008.png",
+    alt: "Цоохор ирвэс болон зэрлэг амьтад",
+    paragraphs: [
+      "Байгаль дэлхий олон төрлийн амьтан, ургамал, амьд биетийн өлгий билээ. Тэдгээрийн амьдрах орчныг хамгаалах нь экологийн тэнцвэрийг хадгалахад чухал ач холбогдолтой.",
+      "Цоохор ирвэс нь Төв Азийн өндөр уулсын бүсэд амьдардаг ховор, нуугдмал амьдралтай махчин амьтан юм. Амьдрах орчны доройтол, хууль бус агнуур, идэш тэжээлийн хомсдол зэрэг нь тэдэнд тулгардаг аюулын тоонд ордог.",
+      "Бид байгальд хариуцлагатай хандах, зэрлэг амьтдын амьдрах орчныг сүйтгэхгүй байх, байгаль хамгаалах ажлыг дэмжих замаар өөрсдийн хувь нэмрээ оруулж чадна.",
+      "Ховор амьтдыг хамгаалах нь зөвхөн өнөөдрийн асуудал биш. Ирээдүй хойч үедээ баялаг байгаль дэлхийг өвлүүлэн үлдээх бидний нийтлэг үүрэг юм."
+    ]
+  },
+
+  recycle: {
+    title: "Хог хаягдлаа ангилцгаая",
+    category: "ЭКО ДАДАЛ",
+    date: "2026-10-13",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSSLmAP2B3yUyjkAxF0WnSpqIz7_M_RCHwV3M5_dkveA&s=10",
+    alt: "Хог хаягдлыг ангилан ялгах",
+    paragraphs: [
+      "Хог хаягдлыг зөв ангилан ялгах нь хүрээлэн буй орчны бохирдлыг бууруулахад тусалдаг энгийн боловч чухал дадал юм.",
+      "Цаас, хуванцар, шил, металл зэрэг материалыг бусад хогноос тусад нь ялгаж, боломжтой тохиолдолд дахин боловсруулах цэгт хүргэж болно. Гэхдээ материалын төрөл бүрийн хүлээн авах нөхцөл өөр байдаг тул орон нутгийн зааврыг дагах хэрэгтэй.",
+      "Сургууль болон гэртээ хогийн савыг төрөлжүүлэн байрлуулах, нэг удаагийн бүтээгдэхүүний хэрэглээг багасгах, дахин ашиглах боломжтой зүйлсийг сонгох нь сайн эхлэл болно.",
+      "Өдөр бүр хийдэг жижиг үйлдлүүд нийлээд том өөрчлөлтийг бий болгодог. Хогоо ангилж хэвшье, эх дэлхийгээ хайрлая."
+    ]
+  },
+
+  nature: {
+    title: "Байгаль бол бидний гэр",
+    category: "НОГООН ИРЭЭДҮЙ",
+    date: "2026-10-13",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKOOv-lumndaX4ZN5Ar7gvOqzrK54aVexicj4-6kCrlQ&s=10",
+    alt: "Ногоон байгаль",
+    paragraphs: [
+      "Байгаль бол хүн төрөлхтөн болон олон мянган амьд биетийн хамт оршин байдаг бидний нийтлэг гэр юм. Цэвэр агаар, ус, хөрс, ургамал амьтан нь амьдралын үндэс болдог.",
+      "Байгалиа хамгаалахын тулд заавал том ажил эхлүүлэх шаардлагагүй. Хог хаяхгүй байх, ус цахилгаанаа хэмнэх, мод ургамлаа хайрлах, нийтийн эзэмшлийн орчноо цэвэр байлгах зэрэг жижиг алхмаас эхэлж болно.",
+      "Сурагч бүр өөрийн сургууль, гэр, орчиндоо эерэг өөрчлөлт бий болгож чадна. Найз нөхөдтэйгөө хамтран ажиллавал сайн дадал улам олон хүнд хүрнэ.",
+      "Ногоон ирээдүйг хэн нэгэн ганцаараа бүтээхгүй. Бид бүгдийн хариуцлага, оролцоо, өдөр тутмын сонголтоор бий болно."
+    ]
+  }
+};
+
+const params = new URLSearchParams(window.location.search);
+const id = params.get("id");
+const article = articles[id];
+const container = document.getElementById("articleContent");
+
+if (!article) {
+  document.title = "Мэдээ олдсонгүй | UVS 2 ECO CLUB";
+  container.innerHTML = `
+    <div class="article-error">
+      <h1>Мэдээ олдсонгүй 🌿</h1>
+      <p>Энэ мэдээ байхгүй эсвэл холбоос буруу байна.</p>
+      <a href="news.html">Бүх мэдээ рүү буцах</a>
+    </div>
+  `;
+} else {
+  document.title = article.title + " | UVS 2 ECO CLUB";
+
+  const cover = document.createElement("img");
+  cover.className = "article-cover";
+  cover.src = article.image;
+  cover.alt = article.alt;
+  cover.onerror = function () {
+    this.style.display = "none";
+  };
+
+  const category = document.createElement("span");
+  category.className = "article-category";
+  category.textContent = article.category;
+
+  const title = document.createElement("h1");
+  title.className = "article-title";
+  title.textContent = article.title;
+
+  const date = document.createElement("p");
+  date.className = "article-date";
+  date.textContent = "Нийтэлсэн: " + article.date;
+
+  const body = document.createElement("div");
+  body.className = "article-body";
+
+  article.paragraphs.forEach(function (paragraph) {
+    const p = document.createElement("p");
+    p.textContent = paragraph;
+    body.appendChild(p);
+  });
+
+  const bottom = document.createElement("div");
+  bottom.className = "article-bottom";
+  bottom.innerHTML =
+    "<strong>🌿 GREEN FUTURE</strong>" +
+    "<p>Байгалиа хайрлая, ирээдүйгээ хамгаалъя.</p>" +
+    '<a href="news.html">← Бусад мэдээг үзэх</a>';
+
+  container.replaceChildren(
+    cover, category, title, date, body, bottom
+  );
+}
+</script>
+
+</body>
+</html>
