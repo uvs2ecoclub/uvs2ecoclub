@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="mn">
 <head>
@@ -107,8 +108,8 @@
 
     .project-tag {
       position: absolute;
-      top: -30px;
-      left: -5px;
+      top: 12px;
+      left: 12px;
       padding: 8px 13px;
       border-radius: 20px;
       background: #286b42;
@@ -122,9 +123,6 @@
       flex: 1;
       flex-direction: column;
       padding: 22px;
-      <a class="project-detail-link" href="projects/irves.html">
-      Дэлгэрэнгүй үзэх →
-      </a>
     }
 
     .project-title {
@@ -189,6 +187,26 @@
       gap: 7px;
     }
 
+    .project-detail-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 20px;
+      padding: 13px 18px;
+      border-radius: 10px;
+      background: #174b35;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background .2s, transform .2s;
+    }
+
+    .project-detail-link:hover {
+      background: #286b42;
+      transform: translateY(-2px);
+    }
+
     .projects-note {
       margin-top: 35px;
       padding: 22px;
@@ -216,25 +234,6 @@
         padding: 18px;
       }
     }
-      .project-detail-link {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      margin-top: 20px;
-      padding: 13px 18px;
-      border-radius: 10px;
-      background: #174b35;
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-      transition: background .2s, transform .2s;
-}
-
-.project-detail-link:hover {
-  background: #286b42;
-  transform: translateY(-2px);
-}
   </style>
 
   <script src="../js/menu.js" defer></script>
@@ -271,20 +270,16 @@
 
 <main>
 
-  <!-- Гарчиг -->
   <section class="projects-hero">
     <div class="container">
       <span class="section-label">OUR INITIATIVES</span>
 
       <h1>Хийхээр төлөвлөж буй арга хэмжээ</h1>
 
-      <p>
-        Энэ онд бидний хийхээр төлөвлөсөн зүйлс
-      </p>
+      <p>Энэ онд бидний хийхээр төлөвлөсөн зүйлс</p>
     </div>
   </section>
 
-  <!-- Төслүүд -->
   <section class="projects-area">
     <div class="container">
 
@@ -298,7 +293,7 @@
 
       <div class="project-grid">
 
-        <!-- 1. Дэлхийн ирвэсийг хамгаалах өдөр -->
+        <!-- 1. Цоохор ирвэс хамгаалах өдөр -->
         <article class="project-card">
 
           <div class="project-image">
@@ -318,18 +313,21 @@
             </div>
 
             <p>
-              Жил бүрийн 10-р сарын 23-нд тэмдэглэдэг
               Дэлхийн цоохор ирвэсийг хамгаалах өдрийг
               тохиолдуулан 7-р цэцэрлэгийн хүүхэд,
-              багачуудад цоохор ирвэсийн талаар
-              танин мэдэхүйн мэдээлэл хүргэж,
-              өдөрлөг зохион байгуулахаар төлөвлөж байна.
+              багачуудад цоохор ирвэсийн талаар танин
+              мэдэхүйн мэдээлэл хүргэж, өдөрлөг зохион
+              байгуулах санаачилга.
             </p>
 
             <div class="project-info">
               <span>📅 Хугацаа: 10-р сарын 23</span>
               <span>📍 Байршил: 7-р цэцэрлэг</span>
             </div>
+
+            <a class="project-detail-link" href="projects/irves.html">
+              Дэлгэрэнгүй үзэх →
+            </a>
 
           </div>
         </article>
@@ -356,7 +354,7 @@
             <p>
               Өөрт хэрэглэхгүй болсон ч бусдад хэрэгтэй
               зүйлсээ хандивлаж, дахин ашиглах боломжийг
-              нэмэгдүүлэхийг уриалж байна.
+              нэмэгдүүлэхийг уриалсан санаачилга.
             </p>
 
             <h4>Хандивлаж болох зүйлс:</h4>
@@ -366,7 +364,6 @@
               <li>Гутал</li>
               <li>Ном</li>
               <li>Цүнх</li>
-              <li>Гоо сайхны бүтээгдэхүүн</li>
               <li>Бусад хэрэгцээт зүйлс</li>
             </ul>
 
@@ -374,6 +371,10 @@
               <span>📍 Хүлээн авах газар: 244-р тоот</span>
               <span>📅 Хугацаа: 2026 оны 10-р сарын 15 хүртэл</span>
             </div>
+
+            <a class="project-detail-link" href="projects/eco-exchange.html">
+              Дэлгэрэнгүй үзэх →
+            </a>
 
           </div>
         </article>
