@@ -100,6 +100,47 @@ img { display: block; width: 100%; object-fit: cover; }
   .card-grid { grid-template-columns: 1fr; }
   .section { padding: 52px 0; }
   .section-heading { align-items: flex-start; flex-direction: column; }
+  
+/* Мэдээний хуудас шилжүүлэгч */
+.news-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.news-pagination a,
+.news-pagination .current-page {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 10px 18px;
+  border: 1px solid #c8ef9b;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.news-pagination a {
+  color: #174b35;
+  background: #ffffff;
+  transition: background 0.2s, color 0.2s;
+}
+
+.news-pagination a:hover {
+  color: #ffffff;
+  background: #174b35;
+}
+
+.news-pagination .current-page {
+  color: #ffffff;
+  background: #174b35;
+}
+
   .cta-box { align-items: flex-start; flex-direction: column; padding: 28px 23px; }
 }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto; transition: none; } }
