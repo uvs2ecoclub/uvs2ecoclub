@@ -1,27 +1,180 @@
+
 <!DOCTYPE html>
-<html lang="mn"><head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Мэдээ | UVS 2 ECO CLUB</title>
-<link rel="stylesheet" href="../css/style.css"><link rel="stylesheet" href="../css/header.css"><link rel="stylesheet" href="../css/footer.css">
-<script src="../js/menu.js" defer></script><script src="../js/main.js" defer></script>
-</head><body>
-<header class="site-header"><div class="container nav">
-<a class="brand" href="../index.html"><span class="brand-icon">🌿</span><span><strong>UVS 2 ECO CLUB</strong><small>GREEN FUTURE</small></span></a>
-<button class="menu-toggle" id="menuToggle" aria-label="Цэс нээх" aria-expanded="false">☰</button>
-<nav id="mainMenu" class="main-menu"><a href="../index.html">Нүүр</a><a href="about.html">Бидний тухай</a><a class="active" href="news.html">Мэдээ</a><a href="projects.html">Төслүүд</a><a href="gallery.html">Галерей</a><a href="contact.html">Холбоо барих</a></nav>
-</div></header>
-<main class="section"><div class="container"><span class="section-label"></span><h1 class="section-title">Мэдээ, мэдээлэл</h1><p class="section-desc">Бид юуг чухалчлах вэ?</p>
-<div class="card-grid" style="margin-top:30px">
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Шинэ мэдээ нэмэхдээ card-grid дотор дараах бүтцийг хуулж, мэдээллээ солино. -->
-<article class="content-card"><img src="https://cdn.yld.mn/553c9866-92a8-446a-b029-31623f3b4793-1200x0-54233e8d-6e17-40cb-a736-e79431a28671-008.png" alt="Амьтад"><div class="card-body"><span class="tag">БАЙГАЛЬ</span><h3>Ховордсон ан амьтдыг хамгаалъя</h3><p>Дэлхий дээр цоохор ирвэс ердөө 7500 шахам үлдсэнээс 20 орчим хувь нь манай улсад байгаа нь Монгол улс цоохор ирвэсийг хамгаалах ёстой гол бүс нутаг болохыг илтгэдэг. Жил бүрийн 10 дугаар сарын 23-ны өдрийг “Цоохор ирвэсийг хамгаалах олон улсын өдөр” болгон тэмдэглэдэг.</p><span class="news-date">Огноо: 2026-10-13</span></div></article>
-<article class="content-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSSLmAP2B3yUyjkAxF0WnSpqIz7_M_RCHwV3M5_dkveA&s=10" alt="Байгаль хамгаалал"><div class="card-body"><span class="tag">ЭКО ДАДАЛ</span><h3>Хог хаягдлаа ангилцгаая</h3><p>Шил, лааз, хуванцар, цаасан хог хаягдлаа ялган тушааж мөнгө болгож эх дэлхийгээ хайрлая</p><span class="news-date">Огноо: 2026-10-13</span></div></article>
-<article class="content-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKOOv-lumndaX4ZN5Ar7gvOqzrK54aVexicj4-6kCrlQ&s=10" alt="Байгаль"><div class="card-body"><span class="tag">БАЙГАЛЬ</span><h3>Байгаль бол бидний гэр</h3><p>Бүх дэлхийгээ ногоон болгоё</p><span class="news-date">Огноо: 2026-10-13</span></div></article>
+  <title>Мэдээ, мэдээлэл | UVS 2 ECO CLUB</title>
+  <meta name="description" content="UVS 2 ECO CLUB-ийн байгаль хамгаалал, эко дадал, ногоон ирээдүйн тухай мэдээ, мэдээлэл.">
 
-<nav class="news-pagination" aria-label="Мэдээний хуудсууд">
-  <span class="current-page">1</span>
-  <a href="news-2.html">Хуучин мэдээнүүд →</a>
-</nav>
-</div></div></main>
-<footer class="site-footer"><div class="container"><div class="footer-brand">🌿 UVS 2 ECO CLUB</div><div class="footer-bottom"><span>© 2026 UVS 2 ECO CLUB</span><a href="../index.html">Нүүр хуудас руу буцах ↑</a></div></div></footer>
-</body></html>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+
+  <script src="../js/menu.js" defer></script>
+  <link rel="stylesheet" href="../css/news.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../index.html">
+      <span class="brand-icon">🌿</span>
+      <span>
+        <strong>UVS 2 ECO CLUB</strong>
+        <small>GREEN FUTURE</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Цэс нээх" aria-expanded="false">☰</button>
+
+    <nav id="mainMenu" class="main-menu">
+      <a href="../index.html">Нүүр</a>
+      <a href="about.html">Бидний тухай</a>
+      <a class="active" href="news.html">Мэдээ</a>
+      <a href="projects.html">Төслүүд</a>
+      <a href="gallery.html">Галерей</a>
+      <a href="contact.html">Холбоо барих</a>
+    </nav>
+  </div>
+</header>
+
+<main class="news-page">
+
+  <section class="news-hero">
+    <div class="news-hero-inner">
+      <span class="news-eyebrow">🌱 OUR GREEN JOURNAL</span>
+      <h1>Мэдээ, <span>мэдээлэл.</span></h1>
+      <p>
+        Байгаль дэлхийгээ хайрлах санаа, мэдлэг,
+        сайн үйлс бүрийг эндээс.
+      </p>
+      <a href="#latest-news" class="news-hero-button">
+        Мэдээнүүд үзэх <span>↓</span>
+      </a>
+    </div>
+    <div class="hero-decoration" aria-hidden="true">🌿</div>
+  </section>
+
+  <section class="news-section" id="latest-news">
+    <div class="news-section-heading">
+      <div>
+        <span class="news-label">DISCOVER & LEARN</span>
+        <h2>Хамгийн сүүлийн мэдээ</h2>
+        <p>Байгаль хамгаалах үйлсэд мэдлэгээрээ нэгдэцгээе.</p>
+      </div>
+      <span class="news-count">03 МЭДЭЭ</span>
+    </div>
+
+    <div class="news-grid">
+
+      <!-- Онцлох мэдээ -->
+      <a class="news-card news-featured"
+         href="news-detail.html?id=irves">
+        <div class="news-image-wrap">
+          <img
+            src="https://cdn.yld.mn/553c9866-92a8-446a-b029-31623f3b4793-1200x0-54233e8d-6e17-40cb-a736-e79431a28671-008.png"
+            alt="Цоохор ирвэс болон зэрлэг амьтад"
+            loading="eager">
+          <span class="news-image-tag">ОНЦЛОХ МЭДЭЭ</span>
+        </div>
+        <div class="news-card-content">
+          <div class="news-meta">
+            <span>🐾 БАЙГАЛЬ ХАМГААЛАЛ</span>
+            <time datetime="2026-10-13">2026.10.13</time>
+          </div>
+          <h3>Ховордсон ан амьтдыг хамгаалъя</h3>
+          <p>
+            Цоохор ирвэс болон ховордсон ан амьтдын амьдрах
+            орчныг хамгаалах нь байгаль дэлхийн ирээдүйд чухал.
+          </p>
+          <span class="news-read">
+            Дэлгэрэнгүй унших <span>↗</span>
+          </span>
+        </div>
+      </a>
+
+      <!-- Хоёр дахь мэдээ -->
+      <a class="news-card"
+         href="news-detail.html?id=recycle">
+        <div class="news-image-wrap">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSSLmAP2B3yUyjkAxF0WnSpqIz7_M_RCHwV3M5_dkveA&s=10"
+            alt="Хог хаягдлыг ангилан ялгах"
+            loading="lazy">
+          <span class="news-image-tag">ЭКО ДАДАЛ</span>
+        </div>
+        <div class="news-card-content">
+          <div class="news-meta">
+            <span>♻️ ДАХИН БОЛОВСРУУЛАЛТ</span>
+            <time datetime="2026-10-13">2026.10.13</time>
+          </div>
+          <h3>Хог хаягдлаа ангилцгаая</h3>
+          <p>
+            Шил, лааз, хуванцар, цаасаа ангилж хэвшсэнээр
+            хог хаягдлыг дахин боловсруулах боломж нэмэгдэнэ.
+          </p>
+          <span class="news-read">
+            Дэлгэрэнгүй унших <span>↗</span>
+          </span>
+        </div>
+      </a>
+
+      <!-- Гурав дахь мэдээ -->
+      <a class="news-card"
+         href="news-detail.html?id=nature">
+        <div class="news-image-wrap">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKOOv-lumndaX4ZN5Ar7gvOqzrK54aVexicj4-6kCrlQ&s=10"
+            alt="Ногоон байгаль"
+            loading="lazy">
+          <span class="news-image-tag">НОГООН ИРЭЭДҮЙ</span>
+        </div>
+        <div class="news-card-content">
+          <div class="news-meta">
+            <span>🌱 БАЙГАЛЬ</span>
+            <time datetime="2026-10-13">2026.10.13</time>
+          </div>
+          <h3>Байгаль бол бидний гэр</h3>
+          <p>
+            Орчноо цэвэр байлгаж, ургамлаа хайрлан,
+            байгалиа хамгаалах үйлсэд хүн бүр нэгдэцгээе.
+          </p>
+          <span class="news-read">
+            Дэлгэрэнгүй унших <span>↗</span>
+          </span>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="news-bottom">
+      <div>
+        <strong>Ногоон ирээдүй биднээс эхэлнэ.</strong>
+        <p>Мэдлэгээ нэмэгдүүлж, үйлдлээрээ үлгэрлэе.</p>
+      </div>
+      <a href="projects.html">Бидний төслүүдтэй танилцах ↗</a>
+    </div>
+
+    <nav class="news-pagination" aria-label="Мэдээний хуудсууд">
+      <span class="current-page" aria-current="page">1</span>
+      <a href="news-2.html">Хуучин мэдээнүүд →</a>
+    </nav>
+
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-brand">🌿 UVS 2 ECO CLUB</div>
+    <div class="footer-bottom">
+      <span>© 2026 UVS 2 ECO CLUB</span>
+      <a href="../index.html">Нүүр хуудас руу буцах ↑</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
