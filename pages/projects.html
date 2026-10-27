@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="mn">
 <head>
@@ -6,12 +5,215 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Төслүүд | UVS 2 ECO CLUB</title>
-  <meta name="description" content="UVS 2 ECO CLUB-ийн байгаль хамгааллын төсөл, эко солилцоо болон үйл ажиллагаанууд.">
 
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/footer.css">
-  <link rel="stylesheet" href="../css/projects.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .projects-hero {
+      padding: 65px 20px;
+      text-align: center;
+      color: white;
+      background:
+        linear-gradient(rgba(16,54,37,.72), rgba(23,75,53,.78)),
+        url("../images/green-nature.jpg") center/cover no-repeat,
+        #174b35;
+    }
+
+    .projects-hero .section-label {
+      display: inline-block;
+      margin-bottom: 15px;
+      padding: 7px 16px;
+      border-radius: 30px;
+      background: #d9edcf;
+      color: #174b35;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .projects-hero h1 {
+      margin: 0 0 15px;
+      font-size: clamp(30px, 5vw, 46px);
+    }
+
+    .projects-hero p {
+      margin: 0;
+      font-size: 17px;
+      color: #eef7eb;
+      line-height: 1.8;
+    }
+
+    .projects-area {
+      padding: 55px 0 70px;
+      background: #f3f8f2;
+    }
+
+    .projects-intro {
+      margin-bottom: 30px;
+    }
+
+    .projects-intro h2 {
+      color: #174b35;
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .projects-intro p {
+      color: #657268;
+      line-height: 1.8;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 25px;
+      align-items: stretch;
+    }
+
+    .project-card {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      border: 1px solid #e0eae0;
+      border-radius: 18px;
+      background: #fff;
+      box-shadow: 0 5px 20px rgba(16,54,37,.07);
+      transition: transform .25s, box-shadow .25s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 28px rgba(16,54,37,.13);
+    }
+
+    .project-image {
+      position: relative;
+      width: 100%;
+      height: 260px;
+      background: #e2eee0;
+    }
+
+    .project-image img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .project-tag {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      padding: 8px 13px;
+      border-radius: 20px;
+      background: #286b42;
+      color: white;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .project-content {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      padding: 22px;
+    }
+
+    .project-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 15px;
+    }
+
+    .project-icon {
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #e2f0df;
+      font-size: 25px;
+    }
+
+    .project-title h3 {
+      margin: 0;
+      color: #103625;
+      font-size: 21px;
+      line-height: 1.4;
+    }
+
+    .project-content p {
+      color: #526157;
+      font-size: 15px;
+      line-height: 1.85;
+    }
+
+    .project-content h4 {
+      margin: 12px 0 5px;
+      color: #174b35;
+    }
+
+    .project-content ul {
+      padding-left: 23px;
+      color: #526157;
+      line-height: 1.8;
+    }
+
+    .project-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: auto;
+      padding: 15px;
+      border-radius: 12px;
+      background: #edf5eb;
+      color: #245638;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    .project-info span {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .projects-note {
+      margin-top: 35px;
+      padding: 22px;
+      border-radius: 14px;
+      background: #e3f0df;
+      color: #174b35;
+      text-align: center;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 750px) {
+      .project-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .project-image {
+        height: 230px;
+      }
+
+      .projects-area {
+        padding: 40px 0 50px;
+      }
+
+      .project-content {
+        padding: 18px;
+      }
+    }
+  </style>
 
   <script src="../js/menu.js" defer></script>
   <script src="../js/main.js" defer></script>
@@ -21,6 +223,7 @@
 
 <header class="site-header">
   <div class="container nav">
+
     <a class="brand" href="../index.html">
       <span class="brand-icon">🌿</span>
       <span>
@@ -40,106 +243,124 @@
       <a href="gallery.html">Галерей</a>
       <a href="contact.html">Холбоо барих</a>
     </nav>
+
   </div>
 </header>
 
 <main>
 
+  <!-- Гарчиг -->
   <section class="projects-hero">
-    <div class="container projects-hero-content">
-      <span class="projects-label">UVS 2 ECO CLUB</span>
-      <h1>Бидний төслүүд</h1>
+    <div class="container">
+      <span class="section-label">OUR INITIATIVES</span>
+
+      <h1>Хийхээр төлөвлөж буй арга хэмжээ</h1>
+
       <p>
-        Байгалиа хайрлах, бусдад эерэг нөлөө түгээх,
-        хэрэгтэй зүйлсээ хуваалцах замаар ногоон
-        ирээдүйг хамтдаа бүтээцгээе.
+        Энэ онд бидний хийхээр төлөвлөсөн зүйлс
       </p>
-      <a class="projects-button" href="#project-list">
-        Төслүүдтэй танилцах ↓
-      </a>
     </div>
   </section>
 
-  <section class="projects-section" id="project-list">
+  <!-- Төслүүд -->
+  <section class="projects-area">
     <div class="container">
 
-      <div class="projects-heading">
-        <span class="projects-label">OUR PROJECTS</span>
-        <h2>Бидний санаачилгууд</h2>
+      <div class="projects-intro">
+        <h2>Бидний санаачилгууд 🌱</h2>
         <p>
-          Төсөл бүр дээр дарж зорилго, үйл ажиллагаа
-          болон гэрэл зургуудтай танилцаарай.
+          Байгаль хамгаалах, дахин ашиглах соёлыг түгээх
+          зорилготой үйл ажиллагаанууд.
         </p>
       </div>
 
-      <div class="projects-grid">
+      <div class="project-grid">
 
-        <!-- ТӨСӨЛ 1: ДЭЛХИЙН ИРВЭСИЙГ ХАМГААЛАХ ӨДӨР -->
-        <a class="project-card"
-           href="project-detail.html?id=leopard">
+        <!-- 1. Дэлхийн ирвэсийг хамгаалах өдөр -->
+        <article class="project-card">
 
           <div class="project-image">
             <img
               src="../images/snow-leopard.jpg"
-              alt="Цоохор ирвэсийг хамгаалах төсөл"
+              alt="Цоохор ирвэс"
               loading="lazy">
 
-            <span class="project-number">01</span>
+            <span class="project-tag">БАЙГАЛЬ ХАМГААЛАЛ</span>
           </div>
 
-          <div class="project-info">
-            <span class="project-category">БАЙГАЛЬ ХАМГААЛАЛ</span>
+          <div class="project-content">
 
-            <h3>Дэлхийн ирвэсийг хамгаалах өдөр</h3>
+            <div class="project-title">
+              <span class="project-icon">🌲</span>
+              <h3>1. Дэлхийн ирвэсийг хамгаалах өдөр</h3>
+            </div>
 
             <p>
-              7-р цэцэрлэгийн хүүхдүүдэд цоохор ирвэс,
-              түүний амьдрах орчин болон хамгаалах
-              шаардлагын талаар танин мэдэхүйн мэдээлэл хүргэх санаачилга.
+              Жил бүрийн 10-р сарын 23-нд тэмдэглэдэг
+              Дэлхийн цоохор ирвэсийг хамгаалах өдрийг
+              тохиолдуулан 7-р цэцэрлэгийн хүүхэд,
+              багачуудад цоохор ирвэсийн талаар
+              танин мэдэхүйн мэдээлэл хүргэж,
+              өдөрлөг зохион байгуулахаар төлөвлөж байна.
             </p>
 
-            <span class="project-more">
-              Төслийн дэлгэрэнгүй →
-            </span>
-          </div>
-        </a>
+            <div class="project-info">
+              <span>📅 Хугацаа: 10-р сарын 23</span>
+              <span>📍 Байршил: 7-р цэцэрлэг</span>
+            </div>
 
-        <!-- ТӨСӨЛ 2: ЭКО СОЛИЛЦОО -->
-        <a class="project-card"
-           href="project-detail.html?id=exchange">
+          </div>
+        </article>
+
+        <!-- 2. Эко солилцоо -->
+        <article class="project-card">
 
           <div class="project-image">
             <img
               src="../images/eco-exchange.jpg"
-              alt="Эко солилцоо арга хэмжээ"
+              alt="Эко солилцоо, дахин ашиглах эд зүйлс"
               loading="lazy">
 
-            <span class="project-number">02</span>
+            <span class="project-tag">ЭКО СОЛИЛЦОО</span>
           </div>
 
-          <div class="project-info">
-            <span class="project-category">ДАХИН АШИГЛАЛТ · ХУВААЛЦАХ СОЁЛ</span>
+          <div class="project-content">
 
-            <h3>Эко солилцоо арга хэмжээ</h3>
+            <div class="project-title">
+              <span class="project-icon">♻️</span>
+              <h3>2. Эко солилцоо арга хэмжээ</h3>
+            </div>
 
             <p>
-              Хувцас, гутал, ном, цүнх болон бусад
-              хэрэгцээтэй зүйлсийг хандивлах, солилцох
-              замаар эд зүйлсийн ашиглалтын хугацааг уртасгах санаачилга.
+              Өөрт хэрэглэхгүй болсон ч бусдад хэрэгтэй
+              зүйлсээ хандивлаж, дахин ашиглах боломжийг
+              нэмэгдүүлэхийг уриалж байна.
             </p>
 
-            <span class="project-more">
-              Төслийн дэлгэрэнгүй →
-            </span>
+            <h4>Хандивлаж болох зүйлс:</h4>
+
+            <ul>
+              <li>Хувцас</li>
+              <li>Гутал</li>
+              <li>Ном</li>
+              <li>Цүнх</li>
+              <li>Гоо сайхны бүтээгдэхүүн</li>
+              <li>Бусад хэрэгцээт зүйлс</li>
+            </ul>
+
+            <div class="project-info">
+              <span>📍 Хүлээн авах газар: 244-р тоот</span>
+              <span>📅 Хугацаа: 2026 оны 10-р сарын 15 хүртэл</span>
+            </div>
+
           </div>
-        </a>
+        </article>
 
       </div>
 
-      <div class="projects-bottom">
-        <p>
-          🌱 Жижиг санаачилга бүр байгальд ээлтэй ирээдүйн нэг хэсэг.
-        </p>
+      <div class="projects-note">
+        🌿 <strong>Байгальд ээлтэй үйлдэл бүр үнэ цэнтэй.</strong>
+        Хамтдаа ногоон ирээдүйг бүтээцгээе!
       </div>
 
     </div>
@@ -149,15 +370,16 @@
 
 <footer class="site-footer">
   <div class="container">
+
     <div class="footer-brand">🌿 UVS 2 ECO CLUB</div>
 
     <div class="footer-bottom">
       <span>© 2026 UVS 2 ECO CLUB</span>
       <a href="../index.html">Нүүр хуудас руу буцах ↑</a>
     </div>
+
   </div>
 </footer>
 
 </body>
 </html>
-```
